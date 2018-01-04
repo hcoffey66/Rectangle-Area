@@ -16,5 +16,13 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int width = int.Parse(textBox1.Text);
+            int length = int.Parse(textBox2.Text);
+            int area = width * length;
+            textBox3.Text = area.ToString();
+        }
     }
 }
